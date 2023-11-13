@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include necessary libraries and stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-container">
+        <video id="background-video" loop muted>
+            <source src="assets/background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="timers-container">
+        <!-- Your existing timer containers here -->
+        <div class="timer-container">
+            <label for="inputDate" class="label">Enter Date and Time:</label>
+            <input type="datetime-local" class="date-input">
+            <label for="timezone" class="label">Select Timezone:</label>
+            <select class="timezone-input">
+                <option value="UTC">UTC</option>
+                <option value="Africa/Nairobi">EAT</option>
+                <option value="America/New_York">America/New_York</option>
+                <option value="Europe/Zurich">Zurich</option>
+            </select>
+            <label for="alarmSound" class="label">Select Alarm Sound:</label>
+            <input type="file" id="alarm-sound-input" accept=".mp3, .wav, .ogg">
+           
+            <button class="start-button">Start Timer</button>
+            <div class="timer-container"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.32/moment-timezone-with-data.min.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>

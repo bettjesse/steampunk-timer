@@ -6,8 +6,8 @@ This project is a steampunk-themed timer built using HTML, CSS, and JavaScript. 
 
 Features
 Time Zone Selection: Users can select their desired time zone to set the timer accordingly.
-Customizable Interface: The steampunk design offers a visually appealing and distinctive user experience with gears roating during coountdown
-Timer Functionality: Start, pause, reset, and stop functionalities for effective time management.
+Customizable Interface: The steampunk design offers a visually appealing and distinctive user experience with gears roating during countdown and an alarm when the timer ends
+Timer Functionality: Start, pause, reset, alarm and stop functionalities for effective time management.
 
 
 Installation
